@@ -16,6 +16,7 @@ module.exports = function(app) {
     if (req.query.id) {
       query.AuthorId = req.query.author_id;
     }
+    db.burgers.findAll()
     .then(function(dbPost) {
       res.json(dbPost);
     });
