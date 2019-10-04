@@ -1,3 +1,6 @@
+-- Drops the "burgers_db" if already created --
+DROP DATABASE burgers_db;
+
 -- Creates the "burgers_db" database --
 CREATE DATABASE burgers_db;
    

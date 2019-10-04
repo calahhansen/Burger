@@ -3,7 +3,7 @@
 const express = require("express");
 
 const app = express();
-const PORT = process.env.PORT || 3306;
+const PORT = process.env.PORT || 8080;
 
 // Requiring our models for syncing
 const db = require("./models");
@@ -15,8 +15,10 @@ app.use(express.json());
 // Static directory
 app.use(express.static("public"));
 
+
 // Routes
 // =============================================================
+app.get("/");
 require("./controllers/burgers_controller.js")(app);
 
 // Syncing our sequelize models and then starting our Express app
