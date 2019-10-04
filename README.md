@@ -3,6 +3,7 @@
 Click here to view deployed app on [Heroku Link](https://burger-app-ch.herokuapp.com/)
 
 ## Overview
+
 I created a burger logger with MySQL, Node, Express, Handlebars and Sequelize for my ORM. (yum!). I followed the MVC design pattern and used Node and MySQL to query and route data in the app, and Handlebars to generate the HTML.
 
 ## How it works
